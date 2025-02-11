@@ -31,7 +31,7 @@ body {
 } 
 
 p{
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
 }
@@ -39,7 +39,7 @@ p{
 .image-container { 
     position: relative; 
     display: inline-block;
-    width: 150%;
+    width: 300%;
     height: auto; 
 } 
 
@@ -48,7 +48,7 @@ p{
     top: 15%; 
     left: 40%; 
     color: black; 
-    font-size: 14px; 
+    font-size: 12px; 
     font-weight: bold; 
     text-align: left; 
 }
