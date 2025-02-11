@@ -14,7 +14,7 @@ body {
 } 
 
 .image { 
-    width: 550%;
+    width: 55%;
     height: auto; 
     border-radius: 5px; 
 } 
@@ -39,7 +39,7 @@ p{
 .image-container { 
     position: relative; 
     display: inline-block;
-    width: 300%;
+    width: 200%;
     height: auto; 
 } 
 
