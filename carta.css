@@ -14,14 +14,14 @@ body {
 } 
 
 .image { 
-    width: 45%;
+    width: 40%;
     height: auto; 
     border-radius: 5px; 
 } 
 
 .btn { 
     padding: 20px 30px; 
-    font-size: 25px; 
+    font-size: 20px; 
     background-color:blue; 
     color: pink; 
     border: black; 
@@ -48,7 +48,7 @@ p{
     top: 15%; 
     left: 40%; 
     color: black; 
-    font-size: 20px; 
+    font-size: 21px; 
     font-weight: bold; 
     text-align: left; 
 }
