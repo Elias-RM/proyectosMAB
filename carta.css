@@ -14,20 +14,20 @@ body {
 } 
 
 .image { 
-    width: 30%;
+    width: 40%;
     height: auto; 
     border-radius: 5px; 
 } 
 
 .btn { 
     padding: 20px 30px; 
-    font-size: 40px; 
+    font-size: 25px; 
     background-color:blue; 
-    color: red; 
-    border: red; 
+    color: pink; 
+    border: black; 
     border-radius: 20px; 
     cursor: pointer; 
-    margin-top: 80px; 
+    margin-top: 50px; 
 } 
 
 p{
@@ -48,7 +48,7 @@ p{
     top: 15%; 
     left: 40%; 
     color: black; 
-    font-size: 20px; 
+    font-size: 18px; 
     font-weight: bold; 
     text-align: left; 
 }
