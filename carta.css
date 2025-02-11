@@ -14,7 +14,7 @@ body {
 } 
 
 .image { 
-    width: 50%;
+    width: 45%;
     height: auto; 
     border-radius: 5px; 
 } 
@@ -48,7 +48,7 @@ p{
     top: 15%; 
     left: 40%; 
     color: black; 
-    font-size: 17px; 
+    font-size: 20px; 
     font-weight: bold; 
     text-align: left; 
 }
