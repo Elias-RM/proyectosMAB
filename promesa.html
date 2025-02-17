@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>promesa</title> 
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                position: relative;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                width: 90%;
+                max-width: 400px;
+            }
+            .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            button {
+                background-color: #ff4081;
+                color: white;
+                padding: 12px 20px;
+                font-size: 18px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            #btnSi {
+                background: linear-gradient(90deg, #ff4d79, #ff0080);
+                color: white;
+            }
+            #btnSi:hover{
+                background-color: #e6005c;
+            }
+            #btnNo {
+                background: gray;
+                color: white;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .oculto {
+                display: none;
+            }
+            #respuesta img {
+                width: 200px;
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+            <p id="mensaje">Ahora, Con todo el respeto que mereces y con todo el amor que te tengo, quisiera saber...</p>
+            <p id="pregunta">¿Quieres ser mi novia?</p>
+        <div class="buttons">
+            <button id="btnSi">Si</button>
+            <button id="btnNo">No</button>
+        </div>
+
+        <div id="respuesta" class="oculto">
+            <img src = "stitch_carta.png" alt="Te quiero">
+        </div>
+    </div>
+
+    <script>
+        const btnNo = document.getElementById("btnNo");
+        const btnSi = document.getElementById("btnSi");
+        const respuesta = document.getElementById("respuesta");
+
+        btnNo.addEventListener("mouseover", function () {
+            const x = Math.random() * window.innerWidth * 0.7;
+            const y = Math.random() * window.innerHeight * 0.7;
+            btnNo.style.left = `${x}px`;
+            btnNo.style.top = `${y}px`;
+        });
+
+        btnSi.addEventListener("click", function () {
+            window.location.href= "tequiero.html";        
+        });
+    </script>
+
+</body>
+</html>

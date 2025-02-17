@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>bonita</title> 
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                position: relative;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                width: 90%;
+                max-width: 400px;
+            }
+            button {
+               background-color: #ff4081;
+               color: white;
+               border: none;
+               padding: 10px 20px;
+               margin: 10px 20px;
+               border-radius: 5px;
+               cursor: pointer;
+               font-size: 16px;
+            }
+            button:hover {
+                background-color: #e6005c;
+            }
+            #si {
+                background: linear-gradient(90deg, #ff4d79, #ff0080);
+                color: white;
+            }
+            #no {
+                background: gray;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>¿Alguna vez te han dicho que eres muy bonita?</h2>
+            <button id="si">Sí</button>
+            <button id="no">No</button>
+            <p id="mensaje" style="display: none; font-size: 18px; color: #ff4081; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("si").addEventListener("click", function() {
+            let mensaje = document.getElementById("mensaje");
+            mensaje.textContent = "Claro, yo te lo dije";
+            mensaje.style.display = "block";
+
+            setTimeout(() => {
+                window.location.href = "promesa.html";
+            }, 3000);
+        });
+        document.getElementById("no").addEventListener("click", function() {
+            let mensaje = document.getElementById("mensaje");
+            mensaje.textContent = "No te hagas";
+            mensaje.style.display = "block";
+        });
+    </script>
+
+</body>
+</html>

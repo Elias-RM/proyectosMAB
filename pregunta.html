@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>pregunta</title> 
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                position: relative;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                width: 90%;
+                max-width: 400px;
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: #ff4081;
+                color: white;
+                padding: 12px 20px;
+                font-size: 18px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            #si {
+                background: linear-gradient(90deg, #ff4d79, #ff0080);
+                color: white;
+            }
+            #no {
+                background: gray;
+                color: white;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>¿Me quieres?
+            <p id="mensaje" style = "display: none; font-size: 18px; color: #ff4081; margin-top: 10px;">Yo tambien te quiero </p>
+        </h2>
+        <div class="buttons">
+            <button id="si">Sí</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("si").addEventListener("click", function() {
+            let mensaje = document.getElementById("mensaje");
+            mensaje.style.display = "block";
+
+            setTimeout(() => {
+                window.location.href = "bonita.html";
+            }, 3000);
+        });
+        document.getElementById("no").addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            this.style.position = "absolute";
+            this.style.left = x + "px";
+            this.style.top = y + "px";
+        });
+    </script>
+
+</body>
+</html>
